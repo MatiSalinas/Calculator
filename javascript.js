@@ -1,3 +1,18 @@
+const nums = document.querySelectorAll('.numButtons');
+const displayText = document.querySelector('.displayText');
+console.log(nums)
+nums.forEach(num => {
+    num.addEventListener('click', ()=> {
+        displayText.textContent += num.textContent;
+    })
+})
+    
+
+
+
+
+
+
 function add(a,b){
     return a + b;
 }

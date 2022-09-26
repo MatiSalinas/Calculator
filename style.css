@@ -38,6 +38,14 @@ button{
     height: 9vh;
     width: 30vw;
     flex: 0 1 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.displayText{
+    font-size: xx-large;
+    color:antiquewhite ;
+    margin-right: 1rem;
 }
 .numpad{
     width: 28vw;
@@ -51,7 +59,7 @@ button{
     grid-template-columns: repeat(4,1fr);
 
 }
-.numButtons {
+.numButtons, .opButtons {
     background-color: hsl(30, 25%, 89%);
     border-color:hsl(30, 25%, 89%);
     border-bottom: .2rem solid hsl(28, 16%, 65%);
