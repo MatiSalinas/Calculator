@@ -7,7 +7,9 @@ nums.forEach(num => {
     num.addEventListener('click', ()=> {
         if(displayText.textContent == 0 || displayText.textContent == operator){
             displayText.textContent = num.textContent;
-        }else{
+        }else if(num.textContent=='.' && displayText.textContent.indexOf('.')!=-1){
+        }
+        else{
         displayText.textContent += num.textContent;}
     })
 })
