@@ -27,7 +27,7 @@ operators.forEach(op => {
 
                     
                 }
-                first = parseInt(displayText.textContent);
+                first = parseFloat(displayText.textContent);
                 operator = '/';
                 displayText.textContent = operator;
                 break;
@@ -41,7 +41,7 @@ operators.forEach(op => {
                     break;
 
                 }
-                first = parseInt(displayText.textContent);
+                first = parseFloat(displayText.textContent);
                 operator = 'X';
                 displayText.textContent = operator;
                 break;
@@ -54,7 +54,7 @@ operators.forEach(op => {
                     displayText.textContent = operator;
                     break;
                 }
-                first = parseInt(displayText.textContent);
+                first = parseFloat(displayText.textContent);
                 operator = '-';
                 displayText.textContent = operator;
                 break;
@@ -67,7 +67,7 @@ operators.forEach(op => {
                     displayText.textContent = operator;
                     break;
                 }
-                first = parseInt(displayText.textContent);
+                first = parseFloat(displayText.textContent);
                 operator = '+';
                 displayText.textContent = operator;
                 break;
@@ -98,7 +98,7 @@ equal.addEventListener('click',operate);
 
 
 function operate(){
-    second = parseInt(displayText.textContent);
+    second = parseFloat(displayText.textContent);
     switch (operator) {
         case '/':
             total = division(first,second);
