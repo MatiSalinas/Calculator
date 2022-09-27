@@ -18,35 +18,57 @@ operators.forEach(op => {
     op.addEventListener('click',()=> {
         switch (op.textContent) {
             case '/':
-                console.log('div')
+                if(operator != 0){
+                    operate()
+                    first = total;
+                    operator = '/';
+                    displayText.textContent = operator;
+                    break;
+
+                    
+                }
                 first = parseInt(displayText.textContent);
-                operator = '/'
+                operator = '/';
                 displayText.textContent = operator;
                 break;
 
             case 'X':
-                console.log('mult')
+                if(operator != 0){
+                    operate()
+                    operator = 'X';
+                    first = total;
+                    displayText.textContent = operator;
+                    break;
+
+                }
                 first = parseInt(displayText.textContent);
-                operator = 'X'
+                operator = 'X';
                 displayText.textContent = operator;
                 break;
 
             case '-':
-                if(operator !=0){
+                if(operator != 0){
                     operate()
-                    displayText.textContent = total;
+                    operator = '-';
                     first = total;
+                    displayText.textContent = operator;
                     break;
                 }
                 first = parseInt(displayText.textContent);
-                operator = '-'
+                operator = '-';
                 displayText.textContent = operator;
                 break;
 
             case '+':
-                console.log('additon')
+                if(operator != 0){
+                    operate()
+                    operator = '+';
+                    first = total;
+                    displayText.textContent = operator;
+                    break;
+                }
                 first = parseInt(displayText.textContent);
-                operator = '+'
+                operator = '+';
                 displayText.textContent = operator;
                 break;
 
