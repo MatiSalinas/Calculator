@@ -96,7 +96,10 @@ reset.addEventListener('click',()=> {
     total = 0;
 })
 
-equal.addEventListener('click',operate);
+equal.addEventListener('click',()=>{
+    operate()
+    operator = 0;
+});
 
 
 function operate(){
