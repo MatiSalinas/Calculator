@@ -109,3 +109,41 @@ color: antiquewhite;
 button:active{
     scale: 0.9;
 }
+
+
+@media only screen and (max-width: 767px) {
+
+    html{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .calculator{
+        width: 100vw;
+    }
+    .numpad{
+        width: 100vw;
+    }
+    .botton{
+        flex: auto;
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+    }
+
+    #equal{
+        width: 50%;
+    }
+    #reset{
+        width: 50%;
+    }
+
+    .numButtons{
+        width: 3rem;
+    }
+    .opButtons{
+        width: 3rem;
+    }
+    .display{
+        width: 90%;
+    }
+}
